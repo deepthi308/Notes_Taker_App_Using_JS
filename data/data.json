@@ -1,0 +1,133 @@
+[
+  {
+    "id": "javascript",
+    "name": "Javascript Guide",
+    "notes": [
+      {
+        "id": 1,
+        "title": "Variables",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 2,
+        "title": "Data Types",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 3,
+        "title": "Prmitive Types",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 4,
+        "title": "Objects",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 5,
+        "title": "Async & Await",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 6,
+        "title": "Fetch",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 7,
+        "title": "Functions",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 8,
+        "title": "XMLHTTP Request",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      }
+    ]
+  },
+  {
+    "id": "css",
+    "name": "CSS Guide",
+    "notes": [
+      {
+        "id": 1,
+        "title": "Float",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 2,
+        "title": "Box Model",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      }
+    ]
+  },
+  {
+    "id": "html",
+    "name": "HTML Guide",
+    "notes": [
+      {
+        "id": 1,
+        "title": "Inline Elements",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 2,
+        "title": "Block Level Elements",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      }
+    ]
+  },
+  {
+    "id": "react",
+    "name": "React.js Guide",
+    "notes": [
+      {
+        "id": 1,
+        "title": "Components",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 2,
+        "title": "Hooks",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      }
+    ]
+  },
+  {
+    "id": "express.js",
+    "name": "Express.js Guide",
+    "notes": [
+      {
+        "id": 1,
+        "title": "Middleware",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      },
+      {
+        "id": 2,
+        "title": "Modules",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusantium saepe possimus nam quis est iste dignissimos iure provident, natus quidem hic quaerat, voluptatibus sapiente ex at esse odit neque.",
+        "updated_on": "19-08-2024"
+      }
+    ]
+  },
+  {
+    "id": "test",
+    "name": "Test",
+    "notes": []
+  }
+]

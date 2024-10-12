@@ -1,0 +1,430 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Root Variables */
+:root {
+  --COLOR-WHITE: #f3f3f3;
+  --COLOR-BLACK: #000;
+  --COLOR-PURE-WHITE: #fff;
+  --COLOR-GREY: #545454;
+  --COLOR-LIGHT-CYAN: rgb(186, 248, 255);
+  --COLOR-MEDIUM-CYAN: rgb(141, 244, 255);
+  --COLOR-CYAN: rgb(0, 229, 255);
+  --COLOR-TRANSPARENT: rgba(0, 0, 0, 0.29);
+}
+
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notes-taker {
+  height: 100%;
+  width: 100%;
+  /* max-width: 1000px; */
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container-left {
+  flex: 3;
+  max-width: 300px;
+  background-color: var(--COLOR-MEDIUM-CYAN);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.6rem;
+}
+
+/* Header Styling Starts Here */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.new-note {
+  width: 70%;
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: var(--COLOR-CYAN);
+  /* box-shadow: inset 0px 0px 2px var(--COLOR-GREY); */
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  /* align-self: center; */
+}
+
+.new-note:hover {
+  filter: brightness(97%);
+}
+
+.new-note:active {
+  transform: scale(0.95);
+}
+
+.note-books {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub-title {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.new-notebook,
+.delete-notebook {
+  padding: 0.6rem;
+  /* width: 2.6rem; */
+  width: 20%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  background-color: var(--COLOR-CYAN);
+  transition: all 0.2s ease-in-out;
+}
+
+.new-notebook:hover,
+.delete-notebook:hover {
+  filter: brightness(97%);
+}
+
+.new-notebook:active,
+.delete-notebook:active {
+  transform: scale(0.95);
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.list-item {
+  width: 90%;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding-left: 1rem;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--COLOR-CYAN);
+  display: flex;
+  justify-content: space-between;
+}
+
+.bin {
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  width: 2.5rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3rem;
+  color: var(--COLOR-CYAN);
+  text-shadow: 0px 0px 1px var(--COLOR-BLACK);
+}
+
+.fa-trash {
+  filter: brightness(85%);
+}
+
+.bin:hover {
+  color: rgb(197, 0, 0);
+  transform: scale(110%);
+}
+
+.list-item:hover {
+  filter: brightness(97%);
+}
+
+.list-item:active {
+  transform: scale(0.95);
+}
+
+.active {
+  box-shadow: inset 0px 0px 3px var(--COLOR-BLACK);
+}
+
+.container-right {
+  flex: 7;
+  background-color: var(--COLOR-WHITE);
+  padding: 1.6rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  /* flex: 1; */
+}
+
+.greeting {
+  font-weight: 500;
+}
+
+.time {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.middle {
+  overflow-y: scroll;
+}
+
+.notebook-title {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  /* margin-bottom: 1rem; */
+}
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.middle::-webkit-scrollbar {
+  width: 10px;
+}
+
+.middle::-webkit-scrollbar-track {
+  background: var(--COLOR-LIGHT-CYAN);
+}
+
+.middle::-webkit-scrollbar-thumb {
+  background: var(--COLOR-CYAN);
+}
+
+.middle::-webkit-scrollbar-thumb:hover {
+  background: var(--COLOR-CYAN);
+}
+
+.note {
+  border-radius: 0.3rem;
+  width: 18rem;
+  padding: 1rem;
+  list-style: none;
+  background-color: var(--COLOR-MEDIUM-CYAN);
+}
+
+.note-heading {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.note-body {
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 0.3rem;
+  background-color: var(--COLOR-PURE-WHITE);
+  border-radius: 0.3rem;
+  text-decoration: underline;
+  padding: 0.8rem;
+  box-shadow: inset 0px 0px 3px var(--COLOR-BLACK);
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.updated-before {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.update-buttons {
+  float: right;
+  margin-top: 0.3rem;
+}
+
+.edit {
+  padding: 0.3rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--COLOR-WHITE);
+  border-radius: 0.3rem;
+}
+
+.edit:active {
+  transform: scale(0.95);
+  box-shadow: inset 0px 0px 1px var(--COLOR-BLACK);
+}
+
+.delete {
+  padding: 0.3rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--COLOR-WHITE);
+  border-radius: 0.3rem;
+}
+
+.delete:active {
+  transform: scale(0.95);
+  box-shadow: inset 0px 0px 1px var(--COLOR-BLACK);
+}
+
+.bottom {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--COLOR-CYAN);
+  color: var(--COLOR-BLACK);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--COLOR-TRANSPARENT);
+}
+
+.new-book-modal {
+  position: absolute;
+  background-color: var(--COLOR-MEDIUM-CYAN);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: rem;
+  width: 20rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  display: none;
+}
+
+.new-book-name {
+  height: 2rem;
+  border: none;
+  box-shadow: inset 0px 0px 3px var(--COLOR-BLACK);
+  padding-left: 0.6rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.new-book-buttons {
+  margin-top: 1rem;
+}
+
+.new-note-modal {
+  position: absolute;
+  background-color: var(--COLOR-MEDIUM-CYAN);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  display: none;
+}
+
+.heading-edit {
+  text-decoration: none;
+  border-bottom: 2px dashed var(--COLOR-BLACK);
+  border-radius: 0.1rem;
+}
+
+.note-text {
+  height: 70%;
+  width: 100%;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 0.3rem;
+  background-color: var(--COLOR-PURE-WHITE);
+  border-radius: 0.3rem;
+  text-decoration: underline;
+  padding: 0.8rem;
+  box-shadow: inset 0px 0px 3px var(--COLOR-BLACK);
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  resize: none;
+}
+
+.new-note-buttons {
+  margin-top: 1rem;
+}
+
+.new-note-cancel,
+.new-note-submit,
+.new-book-cancel,
+.new-book-submit {
+  padding: 0.3rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--COLOR-WHITE);
+  border-radius: 0.3rem;
+  float: right;
+  margin-left: 1rem;
+  background-color: var(--COLOR-CYAN);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.new-note-cancel:hover,
+.new-note-submit:hover,
+.new-book-cancel:hover,
+.new-book-submit:hover {
+  filter: brightness(97%);
+}
+
+.new-note-cancel:active,
+.new-note-submit:active,
+.new-book-cancel:active,
+.new-book-submit:active {
+  transform: scale(0.95);
+}

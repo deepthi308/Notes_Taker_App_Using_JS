@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhenskript - Notes Taker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer
+      "
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="notes-taker">
+      <section class="container-left">
+        <header class="header">
+          <h1 class="title">
+            <i class="fa-solid fa-pen-to-square"></i> Note keeper
+          </h1>
+          <button class="new-note" id="new-note">
+            <i class="fa-solid fa-plus"></i> New note
+          </button>
+        </header>
+        <section class="note-books">
+          <header class="sub-header">
+            <h2 class="sub-title">NOTEBOOKS</h2>
+            <button class="new-notebook" id="new-notebook">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="delete-notebook" id="delete-notebook">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </header>
+          <ul class="list" id="list"></ul>
+        </section>
+      </section>
+      <section class="container-right">
+        <section class="top">
+          <h2 class="greeting" id="greeting">Good Night!</h2>
+          <time class="time" datetime="">Mon, Aug 21 2024</time>
+        </section>
+        <h3 class="notebook-title" id="notebook-title">HTML Guide</h3>
+        <section class="middle">
+          <ul class="notes" id="notes"></ul>
+        </section>
+        <!-- <section class="bottom">
+          <small>Copyright &copy; 2024 By Dhenskript</small>
+        </section> -->
+      </section>
+      <section class="overlay" id="overlay"></section>
+      <section class="new-book-modal" id="new-book-modal">
+        <h2 class="note-heading">New Book</h2>
+        <input
+          type="text"
+          class="new-book-name"
+          id="new-book-name"
+          placeholder="Enter notebook name here..."
+        />
+        <section class="new-book-buttons">
+          <button class="new-book-cancel" id="new-book-cancel">Cancel</button>
+          <button class="new-book-submit" id="new-book-submit">Add Book</button>
+        </section>
+      </section>
+      <section class="new-note-modal" id="new-note-modal">
+        <h2
+          class="note-heading heading-edit"
+          contenteditable="true"
+          id="note-title-text"
+        >
+          Note Title
+        </h2>
+        <textarea
+          class="note-text"
+          id="note-text"
+          placeholder="Enter note here..."
+        ></textarea>
+        <section class="new-note-buttons">
+          <button class="new-note-cancel" id="new-note-cancel">Cancel</button>
+          <button class="new-note-submit" id="new-note-submit">Add Note</button>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
